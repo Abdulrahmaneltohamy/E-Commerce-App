@@ -61,8 +61,6 @@ export default function Login() {
     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
     <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@flowbite.com" required />
   </div>
-
-
 </form> */}
 
 
@@ -94,7 +92,7 @@ export default function Login() {
 
 
           <Link to='/forgotPassword'> <div className='font-bold text-red-600 text-right mb-4'>Forgot Password ?</div> </Link>
-            {loadingspinner ? <button type="button" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full sm:w-auto px-10 py-2.5 text-center ">
+            {loadingspinner ? <button type="button" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full px-10 py-2.5 text-center ">
               <i className="fas fa-spinner fa-spin-pulse"></i>
 
             </button> : <button type="submit" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center mb-2">Register</button>}

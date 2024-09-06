@@ -30,21 +30,21 @@ export default function NavBar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-grow justify-center space-x-4">
+        <div className="hidden lg:flex flex-grow justify-center space-x-4">
           {userData ? (
             <>
-              <NavLink to="" end className="hover:text-gray-700">Home</NavLink>
-              <NavLink to="products" className="hover:text-gray-700">Products</NavLink>
-              <NavLink to="categories" className="hover:text-gray-700">Categories</NavLink>
-              <NavLink to="brands" className="hover:text-gray-700">Brands</NavLink>
-              <NavLink to="allorders" className="hover:text-gray-700">Orders</NavLink>
-              <NavLink to="wishlist" className="hover:text-gray-700">Wish List</NavLink>
+              <NavLink to="" end className="hover:text-gray-600">Home</NavLink>
+              <NavLink to="products" className="hover:text-gray-600">Products</NavLink>
+              <NavLink to="categories" className="hover:text-gray-600">Categories</NavLink>
+              <NavLink to="brands" className="hover:text-gray-600">Brands</NavLink>
+              <NavLink to="allorders" className="hover:text-gray-600">Orders</NavLink>
+              <NavLink to="wishlist" className="hover:text-gray-600">Wish List</NavLink>
             </>
           ) : null}
         </div>
 
         {/* Right Side - Cart, Logout, Social Icons (Visible on Desktop) */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           {!userData && (
             <div className="flex space-x-4">
               <NavLink to="login" className="hover:text-gray-700">Login</NavLink>
@@ -64,19 +64,19 @@ export default function NavBar() {
             </>
           )}
           <div className="flex space-x-4">
-            <Link to="https://facebook.com" target="_blank" className="text-black hover:text-gray-700">
+            <Link to="https://facebook.com" target="_blank" className="text-black hover:text-red-600">
               <i className="fa-brands fa-facebook"></i>
             </Link>
-            <Link to="https://twitter.com" target="_blank" className="text-black hover:text-gray-700">
+            <Link to="https://twitter.com" target="_blank" className="text-black hover:text-red-600">
               <i className="fa-brands fa-twitter"></i>
             </Link>
-            <Link to="https://instagram.com" target="_blank" className="text-black hover:text-gray-700">
+            <Link to="https://instagram.com" target="_blank" className="text-black hover:text-red-600">
               <i className="fa-brands fa-instagram"></i>
             </Link>
-            <Link to="https://linkedin.com" target="_blank" className="text-black hover:text-gray-700">
+            <Link to="https://linkedin.com" target="_blank" className="text-black hover:text-red-600">
               <i className="fa-brands fa-linkedin"></i>
             </Link>
-            <Link to="https://youtube.com" target="_blank" className="text-black hover:text-gray-700">
+            <Link to="https://youtube.com" target="_blank" className="text-black hover:text-red-600">
               <i className="fa-brands fa-youtube"></i>
             </Link>
           </div>
@@ -85,7 +85,7 @@ export default function NavBar() {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          className="inline-flex items-center p-2 w-8 h-10 justify-center text-black rounded-lg md:hidden hover:bg-gray-400 focus:outline-none"
+          className="inline-flex items-center p-2 w-8 h-10 justify-center text-black rounded-lg lg:hidden hover:bg-gray-400 focus:outline-none"
           aria-controls="navbar-default"
           aria-expanded={isNavExpanded}
           onClick={toggleNavExpansion}
@@ -96,7 +96,7 @@ export default function NavBar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`fixed top-[64px] right-0 w-64 h-[100vh] md:hidden bg-gray-300 border border-gray-300 shadow-lg z-40 transform transition-transform ${isNavExpanded ? 'translate-x-0' : 'translate-x-full'}`} id="navbar-default">
+      <div className={`fixed top-[64px] right-0 w-auto h-auto lg:hidden bg-gray-300 border border-gray-300 shadow-lg z-40 transform transition-transform ${isNavExpanded ? 'translate-x-0' : 'translate-x-full'}`} id="navbar-default">
         <div className="p-4">
           <nav>
             {userData ? (
@@ -114,19 +114,19 @@ export default function NavBar() {
                 </NavLink>
                 <button onClick={() => { logOut(); toggleNavExpansion(); }} className="block py-2 text-black">Logout</button>
                 <div className="flex space-x-4 mt-4">
-                  <Link to="https://facebook.com" target="_blank" className="text-black">
+                  <Link to="https://facebook.com" target="_blank" className="text-black hover:text-red-600">
                     <i className="fa-brands fa-facebook"></i>
                   </Link>
-                  <Link to="https://twitter.com" target="_blank" className="text-black">
+                  <Link to="https://twitter.com" target="_blank" className="text-black hover:text-red-600">
                     <i className="fa-brands fa-twitter"></i>
                   </Link>
-                  <Link to="https://instagram.com" target="_blank" className="text-black">
+                  <Link to="https://instagram.com" target="_blank" className="text-black hover:text-red-600">
                     <i className="fa-brands fa-instagram"></i>
                   </Link>
-                  <Link to="https://linkedin.com" target="_blank" className="text-black">
+                  <Link to="https://linkedin.com" target="_blank" className="text-black hover:text-red-600">
                     <i className="fa-brands fa-linkedin"></i>
                   </Link>
-                  <Link to="https://youtube.com" target="_blank" className="text-black">
+                  <Link to="https://youtube.com" target="_blank" className="text-black hover:text-red-600">
                     <i className="fa-brands fa-youtube"></i>
                   </Link>
                 </div>

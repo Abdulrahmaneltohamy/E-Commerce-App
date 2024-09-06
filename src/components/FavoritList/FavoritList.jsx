@@ -39,7 +39,7 @@ export default function FavoritList() {
             <tbody>
               {wishlist?.data.map((item, index) => <tr key={index} className="bg-white border-b hover:bg-gray-50">
                 <td className="px-6 py-4">
-                  <img src={item?.imageCover} className="w-full md:w-32 max-w-full max-h-full" alt="" />
+                  <img src={item?.imageCover} className="w-full md:w-32 max-h-full" alt={item.category.name} />
                 </td>
                 <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
                   {item.category?.name}

@@ -17,7 +17,6 @@ export default function Register() {
   async function registerHandle(values) {
     // console.log("reg",formik);
     // console.log("register", values);
-
     try {
       setLoadingspinner(true)
       let { data } = await axios.post('https://ecommerce.routemisr.com/api/v1/auth/signup', values)
@@ -59,9 +58,7 @@ export default function Register() {
   //   else if (! /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(values.password)) {
   //     errorform.password = " characters must (between 6 and 16) and Includes a special character and number ex.(P@ssw0rd123)"
   //   }
-
-  //   // rePassword
-
+    
   //   if (values.phone === "") {
   //     errorform.phone = "phone is require"
   //   }
@@ -131,7 +128,7 @@ export default function Register() {
 
           <div className="relative z-0 w-full mb-5 group">
             <input type="password" name="rePassword" id="rePassword" value={formik.values.rePassword} onChange={formik.handleChange} onBlur={formik.handleBlur} className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[--main-color] peer" autoComplete='password' placeholder=" " />
-            <label htmlFor="rePassword" className="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[--main-color]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">repeat password :</label>
+            <label htmlFor="rePassword" className="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[--main-color]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">confirm password :</label>
           </div>
           {formik.errors.rePassword && formik.touched.rePassword && <div className="p-2 mb-4 text-sm text-red-800 rounded-lg bg-red-50 " role="alert">
             <span className="font-medium">{formik.errors.rePassword}</span>
@@ -145,7 +142,7 @@ export default function Register() {
             <span className="font-medium">{formik.errors.phone}</span>
           </div>}
 
-          {loadingspinner ? <button type="button" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full sm:w-auto px-10 py-2.5 text-center ">
+          {loadingspinner ? <button type="button" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full px-10 py-2.5 text-center ">
             <i className="fas fa-spinner fa-spin-pulse"></i>
           </button> : <button type="submit" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center mb-4">Register </button>}
           <p>You already have an account ? <Link to='/login'><span className='font-semibold'>Login Now</span></Link></p>

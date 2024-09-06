@@ -84,7 +84,7 @@ export default function Cart() {
                   {product?.price} EGP
                 </td>
                 <td className="px-6 py-4">
-                  <button onClick={() => removeProductFromCart(product.product.id)} className="font-medium text-red-600 ">Remove</button>
+                  <button onClick={() => removeProductFromCart(product.product.id)} className="font-medium text-red-600">Remove</button>
                 </td>
               </tr>)}
             </tbody>
@@ -102,7 +102,7 @@ export default function Cart() {
 
                 <div className=' bg-blue-600 my-2 p-2 rounded-lg font-semibold'>Total Price : {cart?.data?.totalCartPrice ?? ''}  EGP</div>
 
-                <button onClick={() => clearAllCart()} className='bg-red-600  my-2 p-2 rounded-lg'>Clear Cart</button>
+                <button onClick={() => clearAllCart()} className='bg-red-600 my-2 p-2 rounded-lg'>Clear Cart</button>
               </div>
 
 

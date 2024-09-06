@@ -83,7 +83,7 @@ export default function CategoriesSlider() {
 
     <>
       <div className=' pb-11'>
-        <h2 className='mb-1'>Shop Popular Categories</h2>
+        <h2 className='mb-1 font-semibold mt-4'>Shop Popular Categories</h2>
 
         <Slider {...settings}>
           {categoriesSlider?.map((category, index) => <div key={index} className=' py-3'>

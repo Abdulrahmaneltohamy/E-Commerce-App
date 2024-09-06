@@ -58,7 +58,7 @@ export default function AllOrders() {
 
           <div className='container mx-auto'>
             <div className="relative overflow-x-auto md:w-3/4 mx-auto">
-              <h2 className='font-bold py-3 text-center'>Order Details <i className="fa-solid fa-list-check"></i></h2>
+              <h2 className='font-bold mt-3 py-4 text-center'>Order Details <i className="fa-solid fa-list-check"></i></h2>
               <table className="w-full text-sm text-center text-gray-500">
                 <thead className="text-xs text-gray-700 bg-gray-50">
                   <tr>

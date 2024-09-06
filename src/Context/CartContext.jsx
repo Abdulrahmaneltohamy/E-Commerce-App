@@ -61,7 +61,7 @@ export default function CartContextProvider(props) {
 
     async function ubdateProductCount(idOfProduct, count) {
         try {
-            setIsLoading(true)
+            // setIsLoading(true)
             let { data } = await axios.put(`https://ecommerce.routemisr.com/api/v1/cart/${idOfProduct}`,
                 {
                     count
@@ -72,13 +72,13 @@ export default function CartContextProvider(props) {
 
             // console.log(data);
             setCart(data);
-            setIsLoading(false)
+            // setIsLoading(false)
             toast.success('Successfully',
             )
 
         } catch (err) {
             console.log(err);
-            setIsLoading(false)
+            // setIsLoading(false)
         }
     }
 

@@ -56,7 +56,7 @@ export default function Category() {
                 <div
                   key={category._id}
                   onClick={() => handleCategoryClick(category._id, category.name)}
-                  className='w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 hover:scale-[1.02] drop-shadow-md cursor-pointer'
+                  className='w-[80%] mx-auto md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 hover:scale-[1.02] drop-shadow-md cursor-pointer'
                 >
                   <div className='bg-white shadow-lg rounded-lg border-2 overflow-hidden'>
                     <img

@@ -17,7 +17,7 @@ export default function RecentProducts({ product }) {
     
     return (
         <>
-            <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 py-5 px-3 product cursor-pointer'>
+            <div className='w-[80%] mx-auto sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 py-5 px-3 product cursor-pointer'>
                 <div className=' rounded-md p-1 shadow-lg hover:border-2 border-gray-300 hover:scale-[1.03]'>
                     <Link to={`/productDetais/${product.id}/${product.category.name}`}>
                         <img className='w-full' src={product.imageCover} alt="" />

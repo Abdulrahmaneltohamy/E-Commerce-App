@@ -87,11 +87,11 @@ export default function RelatedProduct() {
   return (
     <> 
       <div className=" py-5">
-        <h2 className='py-3'>Products associated with this item</h2>
+        <h2 className='py-3 text-center font-semibold'>Products associated with this item</h2>
         <Slider {...settings2}>
           {relatedProduct.map((product , index) =>
           <div key={index} className='px-2 py-7'>
-            <div className='rounded-md py-1 px-1 hover:scale-[1.1] product shadow-lg focus:border-none'>
+            <div className='w-[80%] mx-auto md:w-full rounded-md py-1 px-1 hover:border-2 border-gray-300 hover:scale-[1.1] product shadow-lg focus:border-none'>
               <Link to={`/productDetais/${product.id}/${product.category.name}`}>
                   <img className='w-full' src={product.imageCover} alt="" />
                   <div className=' pt-2'>

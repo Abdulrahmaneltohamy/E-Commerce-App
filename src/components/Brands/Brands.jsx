@@ -35,7 +35,7 @@ export default function Brands() {
       <div className='container py-10'>
         <div className="flex flex-wrap">
           {allBrands?.map((brand, index) => (
-            <div key={index} className='w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 hover:scale-[1.02] drop-shadow-md'>
+            <div key={index} className='w-[80%] mx-auto md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 hover:scale-[1.02] drop-shadow-md'>
               <div className='bg-white shadow-lg rounded-lg border-2 overflow-hidden'>
                 <img src={brand.image} className='w-full object-cover' alt={brand.name} />
                 <div className='p-4'>

@@ -7,7 +7,7 @@ export default function NotFound() {
 
     <>
     <div>
-      <img className='w-3/4 mx-auto' src={notFoundimage} alt="notFoundimage" />
+      <img className='w-full mx-auto' src={notFoundimage} alt="notFoundimage" />
     </div>
     </>
   )
