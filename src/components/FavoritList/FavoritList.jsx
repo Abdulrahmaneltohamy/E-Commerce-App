@@ -5,6 +5,7 @@ import LoaderSpinner from '../LoaderSpinner/LoaderSpinner'
 import { CartContext } from '../../Context/CartContext'
 
 
+
 export default function FavoritList() {
   let {removeProductFromWishlist , isLoading , wishlist, getWishlist } = useContext(WishlistContext)
   let {addProductToCart} = useContext(CartContext)
@@ -39,7 +40,7 @@ export default function FavoritList() {
             <tbody>
               {wishlist?.data.map((item, index) => <tr key={index} className="bg-white border-b hover:bg-gray-50">
                 <td className="px-6 py-4">
-                  <img src={item?.imageCover} className="w-full md:w-32 max-h-full" alt={item.category.name} />
+                  <img src={item?.imageCover} className="w-full md:w-32" alt={item.category.name} />
                 </td>
                 <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
                   {item.category?.name}

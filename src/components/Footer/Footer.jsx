@@ -47,17 +47,17 @@ export default function Footer() {
       <div className="sm:flex sm:items-center text-center text-black font-bold py-4 bg-gray-400 sm:justify-center">
         <span className="text-sm sm:text-center">© 2024 <Link to="https://github.com/Abdulrahmaneltohamy" className="hover:underline">abdelrahmantohamy</Link> | All Rights Reserved.</span>
         <div className="flex flex-row justify-center mt-4 sm:mt-0 text-center">
-          <Link to='' className="text-gray-500 hover:scale-125 transition-all duration-500 ms-5 ">
-            <i className="fab fa-facebook-f text-black font-semibold"></i>
+          <Link to='' className="text-gray-500  ms-5 ">
+            <i className="fab fa-facebook-f text-black hover:text-red-700 font-semibold"></i>
           </Link>
-          <Link to='' className="text-gray-500 hover:scale-125 transition-all duration-500 ms-5">
-            <i className="fab fa-discord text-black font-semibold"></i>
+          <Link to='' className="text-gray-500  ms-5">
+            <i className="fab fa-discord text-black hover:text-red-700 font-semibold"></i>
           </Link>
-          <Link to='' className="text-gray-500 hover:scale-125 transition-all duration-500 ms-5">
-            <i className="fab fa-twitter text-black font-semibold"></i>
+          <Link to='' className="text-gray-500  ms-5">
+            <i className="fab fa-twitter text-black hover:text-red-700 font-semibold"></i>
           </Link>
-          <Link to='' className="text-gray-500 hover:scale-125 transition-all duration-500 ms-5">
-            <i className="fab fa-instagram text-black font-semibold"></i>
+          <Link to='' className="text-gray-500  ms-5">
+            <i className="fab fa-instagram text-black hover:text-red-700 font-semibold"></i>
           </Link>
         </div>
       </div>

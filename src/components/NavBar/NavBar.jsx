@@ -113,7 +113,8 @@ export default function NavBar() {
                   </i>
                 </NavLink>
                 <button onClick={() => { logOut(); toggleNavExpansion(); }} className="block py-2 text-black">Logout</button>
-                <div className="flex space-x-4 mt-4">
+
+                <div className="flex space-x-2 mt-2">
                   <Link to="https://facebook.com" target="_blank" className="text-black hover:text-red-600">
                     <i className="fa-brands fa-facebook"></i>
                   </Link>
@@ -135,6 +136,24 @@ export default function NavBar() {
               <>
                 <NavLink to="login" className="block py-2" end onClick={toggleNavExpansion}>Login</NavLink>
                 <NavLink to="register" className="block py-2" onClick={toggleNavExpansion}>Register</NavLink>
+
+                <div className="flex space-x-2 mt-2">
+                  <Link to="https://facebook.com" target="_blank" className="text-black hover:text-red-600">
+                    <i className="fa-brands fa-facebook"></i>
+                  </Link>
+                  <Link to="https://twitter.com" target="_blank" className="text-black hover:text-red-600">
+                    <i className="fa-brands fa-twitter"></i>
+                  </Link>
+                  <Link to="https://instagram.com" target="_blank" className="text-black hover:text-red-600">
+                    <i className="fa-brands fa-instagram"></i>
+                  </Link>
+                  <Link to="https://linkedin.com" target="_blank" className="text-black hover:text-red-600">
+                    <i className="fa-brands fa-linkedin"></i>
+                  </Link>
+                  <Link to="https://youtube.com" target="_blank" className="text-black hover:text-red-600">
+                    <i className="fa-brands fa-youtube"></i>
+                  </Link>
+                </div>
               </>
             )}
           </nav>

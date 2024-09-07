@@ -94,13 +94,13 @@ export default function Cart() {
             <>
               <div className='flex justify-around py-4'>
                 <div>
-                  <input type="checkbox" id='isOnline' onChange={() => setIsOnline(!isOnline)} />
+                  <input className='ms-3' type="checkbox" id='isOnline' onChange={() => setIsOnline(!isOnline)} />
                   <label htmlFor="isOnline"> pay online ?</label>
-                  {isOnline ? <button className='bg-[--main-color] mx-2 my-2 p-2 rounded-lg'><Link to={"/checkout"}>Payment online</Link></button>
-                    : <button className='bg-[--main-color] mx-2 my-2 p-2 rounded-lg'><Link to={"/cashPayment"}>Payment Cash</Link></button>}
+                  {isOnline ? <button className='bg-green-700 mx-2 my-2 p-2 rounded-lg'><Link to={"/checkout"}>Payment online</Link></button>
+                    : <button className='bg-[--main-color] mx-4 my-2 p-2 rounded-lg'><Link to={"/cashPayment"}>Payment Cash</Link></button>}
                 </div>
 
-                <div className=' bg-blue-600 my-2 p-2 rounded-lg font-semibold'>Total Price : {cart?.data?.totalCartPrice ?? ''}  EGP</div>
+                <div className=' bg-blue-600 my-2 p-2 mx-3 rounded-lg font-semibold'>Total Price : {cart?.data?.totalCartPrice ?? ''}  EGP</div>
 
                 <button onClick={() => clearAllCart()} className='bg-red-600 my-2 p-2 rounded-lg'>Clear Cart</button>
               </div>
