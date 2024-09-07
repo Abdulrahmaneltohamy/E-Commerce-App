@@ -21,6 +21,7 @@ export default function Register() {
       setLoadingspinner(true)
       let { data } = await axios.post('https://ecommerce.routemisr.com/api/v1/auth/signup', values)
       navigate('/')
+      window.location.reload();
       localStorage.setItem('userToken', data.token)
       console.log(data);
       setUserData(data.token)
