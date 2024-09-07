@@ -99,14 +99,14 @@ export default function AllOrders() {
                     );
                   }) :
                     <div className='py-20 text-center'>
-                      <p className='text-2xl'>Your order has been paid successfully</p>
+                      {/* <p className='text-2xl'>Your order has been paid successfully</p> */}
                       <p className='text-2xl'> your card is empty now</p>
-                      <button className='bg-green-700 mx-2 my-2 p-2 rounded-lg'><Link to={"/products"}>Shopping Now</Link></button>
+                      <button className='bg-green-700 mx-auto w-full lg:flex lg:justify-center lg:w-[30%] my-5 p-2 rounded-lg'><Link to={"/products"}>Shopping Now</Link></button>
                     </div>
                   }
                 </tbody>
               </table>
-              <button className='bg-green-700 mx-auto w-full my-5 p-2 rounded-lg'><Link to={"/products"}>Shopping Now</Link></button>
+              <button className='bg-green-700 mx-auto w-full lg:flex lg:justify-center lg:w-[30%] my-5 p-2 rounded-lg'><Link to={"/products"}>Shopping Now</Link></button>
             </div>
           </div>
 
