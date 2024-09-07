@@ -57,9 +57,9 @@ export default function ForgotPassowrd() {
           </div>}
 
           
-            {loadingspinner ? <button type="button" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full sm:w-auto px-10 py-2.5 text-center ">
+            {loadingspinner ? <button type="button" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full px-10 py-2.5 text-center ">
               <i className="fas fa-spinner fa-spin-pulse"></i>
-            </button> : <button type="submit" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2">git a digit code</button>}
+            </button> : <button type="submit" className="text-white bg-[--main-color]  font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center mb-2">git a digit code</button>}
           
 
         </form>
